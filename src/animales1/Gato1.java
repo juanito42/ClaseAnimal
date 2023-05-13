@@ -2,11 +2,11 @@ package animales1;
 
 import java.util.Objects;
 
-public class Gato extends Animal1 {
+public class Gato1 extends Animal1 {
 
     private String raza;
 
-    public Gato(String codigo, String fechaNacimiento, char sexo, double peso, String raza) throws IllegalArgumentException {
+    public Gato1(String codigo, String fechaNacimiento, char sexo, double peso, String raza) throws IllegalArgumentException {
         super(codigo, fechaNacimiento, sexo, peso);
 
         if (codigo.charAt(0) != 'g' || "".equals(raza)) {
@@ -18,11 +18,11 @@ public class Gato extends Animal1 {
 
     }
 
-    public Gato(Gato otroGato) throws IllegalArgumentException {
+    public Gato1(Gato1 otroGato) throws IllegalArgumentException {
         super(otroGato);
     }
 
-    public Gato(String raza, Animal1 OtroAnimal) {
+    public Gato1(String raza, Animal1 OtroAnimal) {
         super(OtroAnimal);
         this.raza = raza;
     }
